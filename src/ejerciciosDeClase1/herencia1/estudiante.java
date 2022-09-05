@@ -1,4 +1,4 @@
-package ejerciciosDeClase1;
+package ejerciciosDeClase1.herencia1;
 
 public class estudiante extends herencia {
     String noCuenta;
