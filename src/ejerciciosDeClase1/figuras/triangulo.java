@@ -1,42 +1,40 @@
 package ejerciciosDeClase1.figuras;
 
-public class triangulo<perimetro> extends figura {
+public class triangulo extends figura {
     String tipo;
     String angulos;
     double base1;
     double medida2;
     double medida3;
-    double altura;
-    double perimetro = base1+medida2+medida3;
+    double perimetro;
+    double area;
 
 
-    public triangulo(String nombre, int lados, String clasificacion, String tipo, String angulos, double base1,double medida2,double medida3, double altura) {
+    public triangulo(String nombre, int lados, String clasificacion, String tipo, String angulos, double base1,double medida2,double medida3) {
         super(nombre, lados, clasificacion);
         this.tipo = tipo;
         this.angulos = angulos;
         this.base1 = base1;
         this.medida2 = medida2;
         this.medida3 = medida3;
-        this.altura = altura;
+
     }
 
 
 
-    public void verTipo(){
-        System.out.println("El tipo es: " + tipo);
+
+
+    public double verPerimetro(){
+        perimetro = base1+medida2+medida3;
+        return perimetro;
+    }
+    public double verArea(){
+        double s=(base1+medida2+medida3)/2;
+        area=Math.sqrt((s*(s-base1)*(s-medida2)*(s-medida3)));
+        return area;
     }
 
-    public void verAngulos(){
-        System.out.println("Los angulos son : " + angulos);
-    }
 
-    public  void verbase1(){System.out.println("La base es: " + base1);}
-
-    public  void verMedida2(){System.out.println("La medida 2 es: " + medida2);}
-
-    public  void verMedida3(){System.out.println("La medida 3 es: " + medida3);}
-
-    public  void verAltura(){System.out.println("La altura es: " + altura);}
 
 
 
@@ -48,7 +46,9 @@ public class triangulo<perimetro> extends figura {
         System.out.println("Base: " + base1);
         System.out.println("Medida 2: " + medida2);
         System.out.println("Medida 3: " + medida3);
-        System.out.println("Altura: " + altura);
+        System.out.println("Area: " + verArea());
+        System.out.println("Perimetro: " + verPerimetro());
+
 
 
     }
