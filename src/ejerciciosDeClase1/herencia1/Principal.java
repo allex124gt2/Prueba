@@ -8,6 +8,7 @@ public class Principal {
         p1.mostrarInfo();
         e1.mostrarInfo();
     }
-
-
 }
+
+
+
