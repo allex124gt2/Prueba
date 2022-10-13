@@ -1,6 +1,6 @@
 package ejerciciosDeClase1.figuras;
 
-public class triangulo extends figura {
+public class triangulo {
     String tipo;
     String angulos;
     double base1;
@@ -10,8 +10,8 @@ public class triangulo extends figura {
     double area;
 
 
-    public triangulo(String nombre, int lados, String clasificacion, String tipo, String angulos, double base1,double medida2,double medida3) {
-        super(nombre, lados, clasificacion);
+    public triangulo(double base1, double medida2, double medida3) {
+
         this.tipo = tipo;
         this.angulos = angulos;
         this.base1 = base1;
@@ -21,27 +21,20 @@ public class triangulo extends figura {
     }
 
 
-
-
-
-    public double verPerimetro(){
-        perimetro = base1+medida2+medida3;
+    public double verPerimetro() {
+        perimetro = base1 + medida2 + medida3;
         return perimetro;
     }
-    public double verArea(){
-        double s=(base1+medida2+medida3)/2;
-        area=Math.sqrt((s*(s-base1)*(s-medida2)*(s-medida3)));
+
+    public double verArea() {
+        double s = (base1 + medida2 + medida3) / 2;
+        area = Math.sqrt((s * (s - base1) * (s - medida2) * (s - medida3)));
         return area;
     }
 
 
-
-
-
     public void mostrarInfo() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Lados: " + lados);
-        System.out.println("Clasificación: " + clasificacion);
+
         System.out.println("Tipo: " + tipo);
         System.out.println("Base: " + base1);
         System.out.println("Medida 2: " + medida2);
@@ -50,11 +43,7 @@ public class triangulo extends figura {
         System.out.println("Perimetro: " + verPerimetro());
 
 
-
     }
-
-
-
 
 
 }

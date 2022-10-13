@@ -6,7 +6,7 @@ public class figura {
     String clasificacion;
 
 
-    public String toString(){
+    public String toString() {
         return "figura{}";
     }
 

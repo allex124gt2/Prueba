@@ -17,21 +17,16 @@ public class rectangulo extends figura {
     }
 
 
-
-
-
-    public double verPerimetro(){
-        perimetro = ladoH+ladoH+ladoV+ladoV;
+    public double verPerimetro() {
+        perimetro = ladoH + ladoH + ladoV + ladoV;
         return perimetro;
     }
-    public double verArea(){
 
-        area=ladoH*ladoV;
+    public double verArea() {
+
+        area = ladoH * ladoV;
         return area;
     }
-
-
-
 
 
     public void mostrarInfo() {
@@ -42,11 +37,7 @@ public class rectangulo extends figura {
         System.out.println("Perimetro: " + verPerimetro());
 
 
-
     }
-
-
-
 
 
 }

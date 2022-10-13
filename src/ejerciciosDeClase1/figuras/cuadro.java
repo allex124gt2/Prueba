@@ -1,50 +1,39 @@
 package ejerciciosDeClase1.figuras;
 
-public class cuadro extends figura {
+public class cuadro {
 
     double lado;
     double perimetro;
     double area;
 
 
-    public cuadro(String nombre, int lados, String clasificacion, double lado) {
-        super(nombre, lados, clasificacion);
+    public cuadro(double lado) {
+
         this.lado = lado;
 
 
     }
 
 
-
-
-
-    public double verPerimetro(){
-        perimetro = lado+lado+lado+lado;
+    public double verPerimetro() {
+        perimetro = lado + lado + lado + lado;
         return perimetro;
     }
-    public double verArea(){
 
-        area=lado*lado;
+    public double verArea() {
+
+        area = lado * lado;
         return area;
     }
 
 
-
-
-
     public void mostrarInfo() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Lados: " + lados);
-        System.out.println("Clasificación: " + clasificacion);
+
         System.out.println("Area: " + verArea());
         System.out.println("Perimetro: " + verPerimetro());
 
 
-
     }
-
-
-
 
 
 }
