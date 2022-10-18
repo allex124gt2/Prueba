@@ -11,16 +11,16 @@ public class MarcoBoton extends JFrame {
 
     // MarcoBoton agrega objetos JButton a JFrame
     public MarcoBoton() {
-        super("Prueba de botones");
+        super("Button test");
         setLayout(new FlowLayout());
 
-        botonJButtonSimple = new JButton("Boton simple"); // botón con texto
+        botonJButtonSimple = new JButton("Simple button"); // botón con texto
         add(botonJButtonSimple); // agrega botonJButtonSimple a JFrame
 
 
         Icon insecto1 = new ImageIcon(getClass().getResource("numero1.gif"));
         Icon insecto2 = new ImageIcon(getClass().getResource("numero2.gif"));
-        botonJButtonElegante = new JButton("Boton elegante", insecto1); // establece la imagen
+        botonJButtonElegante = new JButton("Elegant button", insecto1); // establece la imagen
         botonJButtonElegante.setRolloverIcon(insecto2); // establece la imagen de sustitución
         add(botonJButtonElegante); // agrega botonJButtonElegante a JFrame
 

@@ -23,7 +23,7 @@ public class MarcoCuadroCombinado extends JFrame {
 
     // El constructor de MarcoCuadroCombinado agrega un objeto JComboBox a JFrame
     public MarcoCuadroCombinado() {
-        super("Prueba de JComboBox");
+        super("JComboBox Test");
         setLayout(new FlowLayout()); // establece el esquema del marco
 
         imagenesJComboBox = new JComboBox<String>(nombres); // establece JComboBox

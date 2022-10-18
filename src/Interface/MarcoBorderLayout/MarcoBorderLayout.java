@@ -1,4 +1,4 @@
-package Interface.MarcoBoderLayout;
+package Interface.MarcoBorderLayout;
 // BorderLayout que contiene cinco botones.
 
 import javax.swing.*;
@@ -9,13 +9,13 @@ import java.awt.event.ActionListener;
 public class MarcoBorderLayout extends JFrame implements ActionListener {
 
     private final JButton botones[]; // arreglo de botones para ocultar porciones
-    private static final String nombres[] = {"Ocultar Norte", "Ocultar Sur",
-            "Ocultar Este", "Ocultar Oeste", "Ocultar Centro"};
+    private static final String nombres[] = {"Hide North", "Hide South",
+            "Hide East", "Hide West", "Hide Center"};
     private final BorderLayout esquema;
 
     // establece la GUI y el manejo de eventos
     public MarcoBorderLayout() {
-        super("Demostracion de BorderLayout");
+        super("Demo BorderLayout");
 
         esquema = new BorderLayout(5, 5); // espacios de 5 píxeles
         setLayout(esquema);

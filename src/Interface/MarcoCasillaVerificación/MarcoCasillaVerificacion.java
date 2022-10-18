@@ -13,16 +13,16 @@ public class MarcoCasillaVerificacion extends JFrame{
 
     // El constructor de MarcoCasillaVerificacion agrega objetos JCheckBox a JFrame
     public MarcoCasillaVerificacion() {
-        super("Prueba de JCheckBox");
+        super("JCheckBox Test");
         setLayout(new FlowLayout());
 
         // establece JTextField y su tipo de letra
-        campoTexto = new JTextField("Observe como cambia el estilo de tipo de letra", 20);
+        campoTexto = new JTextField("Notice how the font style changes.", 20);
         campoTexto.setFont(new Font("Serif", Font.PLAIN, 14));
         add(campoTexto); // agrega campoTexto a JFrame
 
-        negritaJCheckBox = new JCheckBox("Negrita");
-        cursivaJCheckBox = new JCheckBox("Cursiva");
+        negritaJCheckBox = new JCheckBox("Bold");
+        cursivaJCheckBox = new JCheckBox("Italics");
         add(negritaJCheckBox); // agrega casilla de verificación “negrita” a JFrame
         add(cursivaJCheckBox); // agrega casilla de verificación “cursiva” a JFrame
 

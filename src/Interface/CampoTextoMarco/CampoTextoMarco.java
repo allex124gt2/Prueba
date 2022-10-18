@@ -13,7 +13,7 @@ public class CampoTextoMarco extends JFrame {
 
 
     public CampoTextoMarco() {
-        super("Prueba de JTextField y JPasswordField");
+        super("Test JTextField and JPasswordField");
         setLayout(new FlowLayout());
 
 
@@ -21,16 +21,16 @@ public class CampoTextoMarco extends JFrame {
         add(campoTexto1); // agrega campoTexto1 a JFrame
 
 
-        campoTexto2 = new JTextField("Escriba el texto aqui");
+        campoTexto2 = new JTextField("Type the text here");
         add(campoTexto2); // agrega campoTexto2 a JFrame
 
 
-        campoTexto3 = new JTextField("Campo de texto no editable", 21);
+        campoTexto3 = new JTextField("Non-editable text field", 21);
         campoTexto3.setEditable(false);
         add(campoTexto3);
 
 
-        campoContrasenia = new JPasswordField("Texto oculto");
+        campoContrasenia = new JPasswordField("Hidden text");
         add(campoContrasenia);
 
 
@@ -50,22 +50,22 @@ public class CampoTextoMarco extends JFrame {
 
 
             if (evento.getSource() == campoTexto1)
-                cadena = String.format("campoTexto1: %s",
+                cadena = String.format("FieldText1: %s",
             evento.getActionCommand());
 
 
              else if (evento.getSource() == campoTexto2)
-                cadena = String.format("campoTexto2: %s",
+                cadena = String.format("FieldText2: %s",
             evento.getActionCommand() );
 
 
              else if (evento.getSource() == campoTexto3)
-                cadena = String.format("campoTexto3: %s",
+                cadena = String.format("FieldText3: %s",
             evento.getActionCommand());
 
 
              else if (evento.getSource() == campoContrasenia)
-                cadena = String.format("campoContrasenia: %s",
+                cadena = String.format("fieldPassword: %s",
             evento.getActionCommand());
 
 

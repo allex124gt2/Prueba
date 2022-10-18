@@ -10,12 +10,12 @@ public class MarcoSeleccionMultiple extends JFrame {
     private final JList<String> listaJListColores; // lista para guardar los nombres de los colores
     private final JList<String> listaJListCopia; // lista en la que se van a copiar los nombres de los colores
     private JButton botonJButtonCopiar; // botón para copiar los nombres seleccionados
-    private static final String[] nombresColores = {"Negro", "Azul", "Cyan", "Gris oscuro", "Gris", "Verde", "Gris claro", "Magenta", "Naranja", "Rosa", "Rojo", "Blanco", "Amarillo"
+    private static final String[] nombresColores = {"Black", "Blue", "Cyan", "Dark gray", "Gray", "Green", "Light gray", "Magenta", "Orange", "Pink", "Red", "White", "Yellow"
     };
 
     // Constructor de MarcoSeleccionMultiple
     public MarcoSeleccionMultiple() {
-        super("Listas de seleccion multiple");
+        super("Multiple Selection Lists");
         setLayout(new FlowLayout());
 
         listaJListColores = new JList<String>(nombresColores); // lista de nombres de colores
@@ -25,7 +25,7 @@ public class MarcoSeleccionMultiple extends JFrame {
                 ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         add(new JScrollPane(listaJListColores)); // agrega lista con panel de desplazamiento
 
-        botonJButtonCopiar = new JButton("Copiar>>>");
+        botonJButtonCopiar = new JButton("Copy>>>");
         botonJButtonCopiar.addActionListener(
                 new ActionListener() // clase interna anónima
                 {

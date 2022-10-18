@@ -20,17 +20,17 @@ public class MarcoBotonOpcion extends JFrame {
 
     // El constructor de MarcoBotonOpcion agrega los objetos JRadioButton a JFrame
     public MarcoBotonOpcion() {
-        super("Prueba de RadioButton");
+        super("RadioButton Test");
         setLayout(new FlowLayout());
 
-        campoTexto = new JTextField("Observe el cambio en el estilo del tipo de letra", 25);
+        campoTexto = new JTextField("Note the change in font style", 25);
         add(campoTexto); // agrega campoTexto a JFrame
 
         // crea los botones de opción
         simpleJRadioButton = new JRadioButton("Simple", true);
-        negritaJRadioButton = new JRadioButton("Negrita", false);
-        cursivaJRadioButton = new JRadioButton("Cursiva", false);
-        negritaCursivaJRadioButton = new JRadioButton("Negrita / Cursiva", false);
+        negritaJRadioButton = new JRadioButton("Bold", false);
+        cursivaJRadioButton = new JRadioButton("Italic", false);
+        negritaCursivaJRadioButton = new JRadioButton("Bold / Italic", false);
         add(simpleJRadioButton); // agrega botón simple a JFrame
         add(negritaJRadioButton); // agrega botón negrita a JFrame
         add(cursivaJRadioButton); // agrega botón cursiva a JFrame

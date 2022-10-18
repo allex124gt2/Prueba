@@ -16,7 +16,7 @@ public class MarcoFlowLayout extends JFrame {
 
     // establece la GUI y registra los componentes de escucha de botones
     public MarcoFlowLayout() {
-        super("Demostracion de FlowLayout");
+        super("FlowLayout Demo");
 
         esquema = new FlowLayout();
         contenedor = getContentPane(); // obtiene contenedor para esquema
@@ -24,7 +24,7 @@ public class MarcoFlowLayout extends JFrame {
 
 
         // establece botonJButtonIzquierda y registra componente de escucha
-        botonJButtonIzquierda = new JButton("Izquierda");
+        botonJButtonIzquierda = new JButton("Left");
         add(botonJButtonIzquierda); // agrega botón Izquierda al marco
         botonJButtonIzquierda.addActionListener(
                 new ActionListener() // clase interna anónima
@@ -41,7 +41,7 @@ public class MarcoFlowLayout extends JFrame {
         );
 
         // establece botonJButtonCentro y registra componente de escucha
-        botonJButtonCentro = new JButton("Centro");
+        botonJButtonCentro = new JButton("Center");
         add(botonJButtonCentro); // agrega botón Centro al marco
         botonJButtonCentro.addActionListener(
                 new ActionListener() // clase interna anónima
@@ -58,7 +58,7 @@ public class MarcoFlowLayout extends JFrame {
         );
 
         // establece botonJButtonDerecha y registra componente de escucha
-        botonJButtonDerecha = new JButton("Derecha");
+        botonJButtonDerecha = new JButton("Right");
         add(botonJButtonDerecha); // agrega botón Derecha al marco
         botonJButtonDerecha.addActionListener(
                 new ActionListener() // clase interna anónima

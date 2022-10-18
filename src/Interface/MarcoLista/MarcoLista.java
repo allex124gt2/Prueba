@@ -7,9 +7,9 @@ import java.awt.*;
 public class MarcoLista extends JFrame {
 
     private final JList<String> listaJListColores; // lista para mostrar colores
-    private static final String[] nombresColores = {"Negro", "Azul", "Cyan",
-            "Gris oscuro", "Gris", "Verde", "Gris claro", "Magenta",
-            "Naranja", "Rosa", "Rojo", "Blanco", "Amarillo"};
+    private static final String[] nombresColores = {"Black", "Blue", "Cyan",
+            "Dark gray", "Gray", "Green", "light gray", "Magenta",
+            "Orange", "Pink", "Red", "White", "Yellow"};
     private static final Color[] colores = {Color.BLACK, Color.BLUE,
             Color.CYAN, Color.DARK_GRAY, Color.GRAY, Color.GREEN,
             Color.LIGHT_GRAY, Color.MAGENTA, Color.ORANGE, Color.PINK,
@@ -18,7 +18,7 @@ public class MarcoLista extends JFrame {
     // El constructor de MarcoLista agrega a JFrame el JScrollPane que contiene a JList
 
     public MarcoLista() {
-        super("Prueba de JList");
+        super("JList Test");
         setLayout(new FlowLayout());
 
         listaJListColores = new JList<String>(nombresColores); // lista de nombresColores

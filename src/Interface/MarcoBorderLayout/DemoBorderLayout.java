@@ -1,4 +1,4 @@
-package Interface.MarcoBoderLayout;
+package Interface.MarcoBorderLayout;
 
 import javax.swing.JFrame;
 

@@ -13,9 +13,9 @@ public class MarcoDetallesRaton extends JFrame {
 
     // constructor establece String de la barra de título y registra componentede escucha del ratón
     public MarcoDetallesRaton() {
-        super("Clics y botones del raton");
+        super("Mouse clicks and buttons");
 
-        barraEstado = new JLabel("Haga clic en el raton");
+        barraEstado = new JLabel("Click on the mouse");
         add(barraEstado, BorderLayout.SOUTH);
         addMouseListener(new ManejadorClicRaton()); // agrega el manejador
     }
@@ -29,15 +29,15 @@ public class MarcoDetallesRaton extends JFrame {
             int xPos = evento.getX(); // obtiene posición x del ratón
             int yPos = evento.getY(); // obtiene posición y del ratón
 
-            detalles = String.format("Se hizo clic % d vez(veces)",
+            detalles = String.format("Clicked % d time(times)",
                     evento.getClickCount());
 
             if (evento.isMetaDown()) // botón derecho del ratón
-                detalles += "con el boton derecho del raton";
+                detalles += "with the right mouse button";
             else if (evento.isAltDown()) // botón central del ratón
-                detalles += "con el boton central del raton";
+                detalles += "with the central mouse button";
             else // botón izquierdo del ratón
-                detalles += "con el boton izquierdo del raton";
+                detalles += "with the left mouse button";
 
             barraEstado.setText(detalles); // muestra mensaje en barraEstado
         }

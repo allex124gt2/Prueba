@@ -14,13 +14,13 @@ public class MarcoRastreadorRaton extends JFrame {
     // El constructor de MarcoRastreadorRaton establece la GUI y
     // registra los manejadores de eventos de ratón
     public MarcoRastreadorRaton() {
-        super("Demostracion de los eventos de raton");
+        super("Demonstration of mouse events");
 
         panelRaton = new JPanel();
         panelRaton.setBackground(Color.WHITE);
         add(panelRaton, BorderLayout.CENTER); // agrega el panel a JFrame
 
-        barraEstado = new JLabel("Raton fuera de JPanel");
+        barraEstado = new JLabel("Mouse out of JPanel");
         add(barraEstado, BorderLayout.SOUTH); // agrega etiqueta a JFrame
 
         // crea y registra un componente de escucha para los eventos de ratón y de su movimiento
@@ -36,28 +36,28 @@ public class MarcoRastreadorRaton extends JFrame {
         // manejan el evento cuando se suelta el ratón justo después de oprimir el botón
         @Override
         public void mouseClicked(MouseEvent evento) {
-            barraEstado.setText(String.format("Se hizo clic en[ % d, % d]",
+            barraEstado.setText(String.format("Clicked on[ % d, % d]",
                     evento.getX(), evento.getY()));
         }
 
         // maneja evento cuando se oprime el ratón
         @Override
         public void mousePressed(MouseEvent evento) {
-            barraEstado.setText(String.format("Se oprimio en[ % d, % d]",
+            barraEstado.setText(String.format("Pressed on[ % d, % d]",
                     evento.getX(), evento.getY()));
         }
 
         // maneja evento cuando se suelta el botón del ratón
         @Override
         public void mouseReleased(MouseEvent evento) {
-            barraEstado.setText(String.format("Se solto en[ % d, % d]",
+            barraEstado.setText(String.format("Released in[ % d, % d]",
                     evento.getX(), evento.getY()));
         }
 
         // maneja evento cuando el ratón entra al área
         @Override
         public void mouseEntered(MouseEvent evento) {
-            barraEstado.setText(String.format("Raton entro en[ % d, % d]",
+            barraEstado.setText(String.format("Raton entered[ % d, % d]",
                     evento.getX(), evento.getY()));
             panelRaton.setBackground(Color.GREEN);
         }
@@ -65,7 +65,7 @@ public class MarcoRastreadorRaton extends JFrame {
         // maneja evento cuando el ratón sale del área
         @Override
         public void mouseExited(MouseEvent evento) {
-            barraEstado.setText("Raton fuera de JPanel");
+            barraEstado.setText("Mouse out of JPanel");
             panelRaton.setBackground(Color.WHITE);
         }
 
@@ -73,14 +73,14 @@ public class MarcoRastreadorRaton extends JFrame {
         // el evento cuando el usuario arrastra el ratón con el botón oprimido
         @Override
         public void mouseDragged(MouseEvent evento) {
-            barraEstado.setText(String.format("Se arrastro en[ % d, % d]",
+            barraEstado.setText(String.format("Crawled in[ % d, % d]",
                     evento.getX(), evento.getY()));
         }
 
         // maneja evento cuando el usuario mueve el ratón
         @Override
         public void mouseMoved(MouseEvent evento) {
-            barraEstado.setText(String.format("Se movio en[ % d, % d]",
+            barraEstado.setText(String.format("Moved in[ % d, % d]",
                     evento.getX(), evento.getY()));
         }
     } // fin de la clase interna ManejadorRaton
