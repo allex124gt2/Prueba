@@ -11,7 +11,7 @@ public class MarcoPanel extends JFrame {
 
     // constructor sin argumentos
     public MarcoPanel() {
-        super("Demostracion de Panel");
+        super("Demo Panel");
 
         botones = new JButton[5];
         panelBotones = new JPanel();
@@ -20,7 +20,7 @@ public class MarcoPanel extends JFrame {
 
         // crea y agrega los botones
         for (int cuenta = 0; cuenta < botones.length; cuenta++) {
-            botones[cuenta] = new JButton("Boton " + (cuenta + 1));
+            botones[cuenta] = new JButton("Button " + (cuenta + 1));
             panelBotones.add(botones[cuenta]); // agrega el botón al panel
         }
 

@@ -1,4 +1,4 @@
-package EjerciciosClase.ErrorArchivo;
+package EjerciciosClase.Clases.Ejercicio1310;
 
 public class Ejercicio1310 {
 

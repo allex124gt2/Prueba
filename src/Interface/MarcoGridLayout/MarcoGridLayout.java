@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 public class MarcoGridLayout extends JFrame implements ActionListener {
     private final JButton[] botones; // arreglo de botones
     private static final String[] nombres =
-            {"uno", "dos", "tres", "cuatro", "cinco", "seis"};
+            {"one", "two", "three", "four", "five", "six"};
     private boolean alternar = true; // alterna entre dos esquemas
     private Container contenedor; // contenedor del marco
     private GridLayout cuadricula1; // primer objeto GridLayout
@@ -18,7 +18,7 @@ public class MarcoGridLayout extends JFrame implements ActionListener {
 
     // constructor sin argumentos
     public MarcoGridLayout() {
-        super("Demostracion de GridLayout");
+        super("Demo GridLayout");
         cuadricula1 = new GridLayout(2, 3, 5, 5); // 2 por 3; espacios de 5
         cuadricula2 = new GridLayout(3, 2); // 3 por 2; sin espacios
         contenedor = getContentPane();

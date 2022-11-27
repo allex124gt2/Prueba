@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<concesionario>
+    <coches>
+        <coche>
+            <matricula>25ERT</matricula>
+            <marca>Chevrolet</marca>
+            <precio>250,000</precio>
+        </coche>
+    </coches>
+</concesionario>

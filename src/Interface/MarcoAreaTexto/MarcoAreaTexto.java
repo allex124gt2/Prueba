@@ -14,16 +14,16 @@ public class MarcoAreaTexto extends JFrame {
 
     // constructor sin argumentos
     public MarcoAreaTexto() {
-        super("Demostracion de JTextArea");
+        super("Demo JTextArea");
         Box cuadro = Box.createHorizontalBox(); // crea un cuadro
-        String demo = "Esta es una cadena de\ndemostracion para\n" +
-                "ilustrar como copiar texto\nde un area de texto a \n" +
-                "otra, usando un\nevento externo\n";
+        String demo = "This is a chain of\ndemonstration for\n" +
+                "illustrate how to copy text\nfrom a text area to \n" +
+                "other, using a\nexternal event\n";
 
         areaTexto1 = new JTextArea(demo, 10, 15);
         cuadro.add(new JScrollPane(areaTexto1)); // agrega panel de desplazamiento
 
-        botonCopiar = new JButton("Copiar >>>"); // crea botón para copiar
+        botonCopiar = new JButton("Copy >>>"); // crea botón para copiar
         cuadro.add(botonCopiar); // agrega botón de copia al cuadro
         botonCopiar.addActionListener(
                 new ActionListener() // clase interna anónima
