@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Curriculum>
+    <empleados>
+        <empleado>
+            <Nombre>Pedro</Nombre>
+            <Profesion>Ingeniero quimico</Profesion>
+            <experience>5 years</experience>
+            <Correo>pedro@gmail.com</Correo>
+            <Telefono>7121254477</Telefono>
+        </empleado>
+    </empleados>
+</Curriculum>
